@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tutorly · Agenda académica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="gestion.js"></script>
+  </head>
+  <body>
+    <aside>
+      <a href="#tutorias" class="brand"><span class="mark">t</span>Tutorly</a>
+      <a class="volver" href="/">← Mi cuenta</a><nav id="nav" aria-label="Navegación principal"></nav>
+    </aside>
+    <main>
+      <header>
+        <span>Campus <b>/</b> <strong id="crumb">Agenda</strong></span
+        ><time id="today"></time>
+      </header>
+      <section class="heading">
+        <div>
+          <small id="group"></small>
+          <h1 id="title">Agenda de tutorías</h1>
+        </div>
+        <button class="primary" id="create">＋ Programar tutoría</button>
+      </section>
+      <div id="metrics"></div>
+      <section class="panel">
+        <div id="tools"></div>
+        <div id="content" aria-live="polite"></div>
+      </section>
+    </main>
+    <dialog id="dialog">
+      <form id="editor">
+        <div class="dialoghead">
+          <h2 id="formtitle"></h2>
+          <button type="button" data-close aria-label="Cerrar">×</button>
+        </div>
+        <div id="fields"></div>
+        <p id="error" role="alert"></p>
+        <footer>
+          <button type="button" data-close>Cancelar</button
+          ><button class="primary" type="submit">Guardar</button>
+        </footer>
+      </form>
+    </dialog>
+    <div id="toast" role="status"></div>
+  </body>
+</html>

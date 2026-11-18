@@ -1,0 +1,460 @@
+{
+  "tutores": [
+    {
+      "tutor_id": "T001",
+      "nombre": "Carlos Pérez",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 8,
+      "materias": [
+        "M002",
+        "M001"
+      ],
+      "telefono": "3001234567",
+      "email": "carlos@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T002",
+      "nombre": "Ana Gómez",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 7,
+      "materias": [
+        "M003",
+        "M004"
+      ],
+      "telefono": "3109876543",
+      "email": "ana@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T003",
+      "nombre": "Luis Rodríguez",
+      "carrera": "Ingeniería de Software",
+      "semestre": 9,
+      "materias": [
+        "M002",
+        "M005"
+      ],
+      "telefono": "3151236789",
+      "email": "luis@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T004",
+      "nombre": "Mariana Torres",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 8,
+      "materias": [
+        "M001",
+        "M006"
+      ],
+      "telefono": "3208765432",
+      "email": "mariana@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T005",
+      "nombre": "Fernando Ríos",
+      "carrera": "Ingeniería Informática",
+      "semestre": 6,
+      "materias": [
+        "M007",
+        "M002"
+      ],
+      "telefono": "3052345678",
+      "email": "fernando@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T006",
+      "nombre": "Sofía Martínez",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 9,
+      "materias": [
+        "M001",
+        "M002"
+      ],
+      "telefono": "3015678945",
+      "email": "sofia@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T007",
+      "nombre": "Andrés López",
+      "carrera": "Ingeniería de Software",
+      "semestre": 7,
+      "materias": [
+        "M002",
+        "M009"
+      ],
+      "telefono": "3213456789",
+      "email": "andres@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T008",
+      "nombre": "Sandra Peña",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 8,
+      "materias": [
+        "M003",
+        "M008"
+      ],
+      "telefono": "3156783452",
+      "email": "sandra@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T009",
+      "nombre": "Eduardo Rojas",
+      "carrera": "Ingeniería Informática",
+      "semestre": 10,
+      "materias": [
+        "M007",
+        "M006"
+      ],
+      "telefono": "3009876543",
+      "email": "eduardo@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    },
+    {
+      "tutor_id": "T010",
+      "nombre": "Beatriz Herrera",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 6,
+      "materias": [
+        "M004",
+        "M003"
+      ],
+      "telefono": "3224567890",
+      "email": "beatriz@universidad.edu",
+      "estado": "Activo",
+      "experiencia": 0
+    }
+  ],
+  "estudiantes": [
+    {
+      "estudiante_id": "E001",
+      "nombre": "Laura Gómez",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 4,
+      "telefono": "3001112233",
+      "email": "laura@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E002",
+      "nombre": "Juan Pérez",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 3,
+      "telefono": "3012223344",
+      "email": "juan@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E003",
+      "nombre": "Camila Rodríguez",
+      "carrera": "Ingeniería de Software",
+      "semestre": 5,
+      "telefono": "3023334455",
+      "email": "camila@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E004",
+      "nombre": "Miguel Torres",
+      "carrera": "Ingeniería Informática",
+      "semestre": 4,
+      "telefono": "3034445566",
+      "email": "miguel@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E005",
+      "nombre": "Valentina Ríos",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 2,
+      "telefono": "3045556677",
+      "email": "valentina@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E006",
+      "nombre": "Daniel Martínez",
+      "carrera": "Ingeniería de Software",
+      "semestre": 6,
+      "telefono": "3056667788",
+      "email": "daniel@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E007",
+      "nombre": "Natalia López",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 4,
+      "telefono": "3067778899",
+      "email": "natalia@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E008",
+      "nombre": "Sebastián Peña",
+      "carrera": "Ingeniería Informática",
+      "semestre": 5,
+      "telefono": "3078889900",
+      "email": "sebastian@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E009",
+      "nombre": "Paula Rojas",
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 3,
+      "telefono": "3089990011",
+      "email": "paula@email.com",
+      "estado": "Activo"
+    },
+    {
+      "estudiante_id": "E010",
+      "nombre": "Andrés Herrera",
+      "carrera": "Ingeniería de Software",
+      "semestre": 5,
+      "telefono": "3090001122",
+      "email": "andres@email.com",
+      "estado": "Activo"
+    }
+  ],
+  "materias": [
+    {
+      "materia_id": "M001",
+      "nombre": "Bases de Datos",
+      "programa": "Ingeniería de Sistemas",
+      "semestre": 4,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M002",
+      "nombre": "Programación",
+      "programa": "Ingeniería de Sistemas",
+      "semestre": 3,
+      "creditos": 4,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M003",
+      "nombre": "Cálculo",
+      "programa": "Ingeniería de Sistemas",
+      "semestre": 2,
+      "creditos": 4,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M004",
+      "nombre": "Álgebra",
+      "programa": "Ingeniería de Sistemas",
+      "semestre": 1,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M005",
+      "nombre": "Estructuras de Datos",
+      "programa": "Ingeniería de Software",
+      "semestre": 4,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M006",
+      "nombre": "Sistemas Operativos",
+      "programa": "Ingeniería de Sistemas",
+      "semestre": 5,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M007",
+      "nombre": "Redes",
+      "programa": "Ingeniería Informática",
+      "semestre": 5,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M008",
+      "nombre": "Estadística",
+      "programa": "Ingeniería de Sistemas",
+      "semestre": 4,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M009",
+      "nombre": "Desarrollo Web",
+      "programa": "Ingeniería de Software",
+      "semestre": 6,
+      "creditos": 3,
+      "estado": "Activa"
+    },
+    {
+      "materia_id": "M010",
+      "nombre": "Ingeniería de Software",
+      "programa": "Ingeniería de Software",
+      "semestre": 6,
+      "creditos": 3,
+      "estado": "Activa"
+    }
+  ],
+  "tutorias": [
+    {
+      "tutoria_id": "TU001",
+      "estudiante_id": "E001",
+      "tutor_id": "T001",
+      "materia_id": "M001",
+      "fecha": "2026-09-10",
+      "estado": "Finalizada",
+      "modalidad": "Presencial",
+      "hora_inicio": "10:00",
+      "hora_fin": "11:00",
+      "tema_solicitado": "Bases de Datos"
+    },
+    {
+      "tutoria_id": "TU002",
+      "estudiante_id": "E002",
+      "tutor_id": "T002",
+      "materia_id": "M003",
+      "fecha": "2026-09-11",
+      "estado": "Programada",
+      "modalidad": "Virtual",
+      "hora_inicio": "14:00",
+      "hora_fin": "15:00",
+      "tema_solicitado": "Cálculo"
+    },
+    {
+      "tutoria_id": "TU003",
+      "estudiante_id": "E003",
+      "tutor_id": "T003",
+      "materia_id": "M005",
+      "fecha": "2026-09-12",
+      "estado": "Programada",
+      "modalidad": "Presencial",
+      "hora_inicio": "09:00",
+      "hora_fin": "10:00",
+      "tema_solicitado": "Estructuras de Datos"
+    },
+    {
+      "tutoria_id": "TU004",
+      "estudiante_id": "E004",
+      "tutor_id": "T004",
+      "materia_id": "M001",
+      "fecha": "2026-09-13",
+      "estado": "Cancelada",
+      "modalidad": "Virtual",
+      "hora_inicio": "15:30",
+      "hora_fin": "16:30",
+      "tema_solicitado": "Bases de Datos"
+    },
+    {
+      "tutoria_id": "TU005",
+      "estudiante_id": "E005",
+      "tutor_id": "T005",
+      "materia_id": "M002",
+      "fecha": "2026-09-14",
+      "estado": "Programada",
+      "modalidad": "Presencial",
+      "hora_inicio": "08:00",
+      "hora_fin": "09:00",
+      "tema_solicitado": "Programación"
+    },
+    {
+      "tutoria_id": "TU006",
+      "estudiante_id": "E006",
+      "tutor_id": "T006",
+      "materia_id": "M001",
+      "fecha": "2026-09-15",
+      "estado": "Programada",
+      "modalidad": "Virtual",
+      "hora_inicio": "12:30",
+      "hora_fin": "13:30",
+      "tema_solicitado": "Bases de Datos"
+    },
+    {
+      "tutoria_id": "TU007",
+      "estudiante_id": "E007",
+      "tutor_id": "T007",
+      "materia_id": "M002",
+      "fecha": "2026-09-16",
+      "estado": "Programada",
+      "modalidad": "Presencial",
+      "hora_inicio": "16:00",
+      "hora_fin": "17:00",
+      "tema_solicitado": "Programación"
+    },
+    {
+      "tutoria_id": "TU008",
+      "estudiante_id": "E008",
+      "tutor_id": "T008",
+      "materia_id": "M008",
+      "fecha": "2026-09-17",
+      "estado": "Finalizada",
+      "modalidad": "Virtual",
+      "hora_inicio": "07:30",
+      "hora_fin": "08:30",
+      "tema_solicitado": "Estadística"
+    },
+    {
+      "tutoria_id": "TU009",
+      "estudiante_id": "E009",
+      "tutor_id": "T009",
+      "materia_id": "M007",
+      "fecha": "2026-09-18",
+      "estado": "Programada",
+      "modalidad": "Presencial",
+      "hora_inicio": "11:00",
+      "hora_fin": "12:00",
+      "tema_solicitado": "Redes"
+    },
+    {
+      "tutoria_id": "TU010",
+      "estudiante_id": "E010",
+      "tutor_id": "T010",
+      "materia_id": "M004",
+      "fecha": "2026-09-19",
+      "estado": "Programada",
+      "modalidad": "Virtual",
+      "hora_inicio": "17:00",
+      "hora_fin": "18:00",
+      "tema_solicitado": "Álgebra"
+    }
+  ],
+  "valoraciones": [
+    {
+      "valoracion_id": "V001",
+      "tutoria_id": "TU001",
+      "estudiante_id": "E001",
+      "tutor_id": "T001",
+      "puntuacion": 5,
+      "comentario": "La tutoría fue clara y me ayudó a comprender el tema",
+      "fecha": "2026-09-10"
+    },
+    {
+      "valoracion_id": "V002",
+      "tutoria_id": "TU008",
+      "estudiante_id": "E008",
+      "tutor_id": "T008",
+      "puntuacion": 4,
+      "comentario": "Buena explicación y ejemplos útiles",
+      "fecha": "2026-09-17"
+    }
+  ]
+}

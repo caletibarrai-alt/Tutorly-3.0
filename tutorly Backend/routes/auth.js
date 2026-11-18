@@ -1,0 +1,13 @@
+const r=require('express').Router()
+const {ruta,autenticar,permitir}=require('../middleware/autorizacion')
+const c=require('../controllers/authController')
+r.post('/login',ruta(c.login))
+r.use(autenticar)
+r.get('/yo',ruta(c.yo))
+r.post('/salir',ruta(c.salir))
+r.use('/cuentas',permitir('ADMINISTRADOR'))
+r.get('/cuentas',ruta(c.listar))
+r.post('/cuentas',ruta(c.crear))
+r.put('/cuentas/:id',ruta(c.estado))
+r.put('/cuentas/:id/administrador',ruta(c.promover))
+module.exports=r

@@ -1,0 +1,1228 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Tutorly · Parcial",
+  "collectionId": "5e868144-df22-45cf-af46-163724726b7a",
+  "dateExported": "2026-11-10T12:00:00.000Z",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "a1b9a732-eb72-4df2-9518-074cd0bee451",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Conexión",
+      "url": "http://localhost:3000/api/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "d19f41f2-19cb-4ee2-bbfa-6a924e94a654",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear materias",
+      "url": "http://localhost:3000/api/materias",
+      "method": "POST",
+      "sortNum": 20000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"materia_id\": \"M-LAB\",\n  \"nombre\": \"Laboratorio Tutorly\",\n  \"programa\": \"Sistemas\",\n  \"semestre\": 4,\n  \"creditos\": 3\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "ba53dd8b-35eb-43f2-aebb-73356b487f2e",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar M-LAB",
+      "url": "http://localhost:3000/api/materias/M-LAB",
+      "method": "GET",
+      "sortNum": 30000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "96253fcb-6010-4401-b4ea-89d131ddcb9b",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar M-LAB",
+      "url": "http://localhost:3000/api/materias/M-LAB",
+      "method": "PUT",
+      "sortNum": 40000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"creditos\": 4\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "244f017f-cd1e-4fca-842d-3cfffb03ae62",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear estudiantes",
+      "url": "http://localhost:3000/api/estudiantes",
+      "method": "POST",
+      "sortNum": 50000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Andrea Laboratorio\",\n  \"carrera\": \"Sistemas\",\n  \"semestre\": 5,\n  \"telefono\": \"3001234567\",\n  \"email\": \"lab-estudiante@example.edu\",\n  \"estudiante_id\": \"E-LAB\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "0aa6d967-e654-4a59-9c18-47057fa4b1b6",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar E-LAB",
+      "url": "http://localhost:3000/api/estudiantes/E-LAB",
+      "method": "GET",
+      "sortNum": 60000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "048ce13b-5047-4923-ba77-06c249783ab5",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar E-LAB",
+      "url": "http://localhost:3000/api/estudiantes/E-LAB",
+      "method": "PUT",
+      "sortNum": 70000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"semestre\": 6\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "7f813920-7e25-49e9-951c-0d6707eb6019",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear tutores",
+      "url": "http://localhost:3000/api/tutores",
+      "method": "POST",
+      "sortNum": 80000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Camilo Laboratorio\",\n  \"carrera\": \"Sistemas\",\n  \"semestre\": 5,\n  \"telefono\": \"3001234567\",\n  \"email\": \"lab-tutor@example.edu\",\n  \"tutor_id\": \"T-LAB\",\n  \"materias\": [\n    \"M-LAB\"\n  ]\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "11bca6a3-b6aa-46d1-b342-4a75dfe9d43a",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar T-LAB",
+      "url": "http://localhost:3000/api/tutores/T-LAB",
+      "method": "GET",
+      "sortNum": 90000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "bf9a161a-dd7c-41b7-ac96-81027595258b",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar T-LAB",
+      "url": "http://localhost:3000/api/tutores/T-LAB",
+      "method": "PUT",
+      "sortNum": 100000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"experiencia\": 2\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "8bc8c211-2a91-48e3-96db-f0f7e08c7a57",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Buscar tutor por materia",
+      "url": "http://localhost:3000/api/tutores/buscar?materia=M-LAB",
+      "method": "GET",
+      "sortNum": 110000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "d30b020b-885d-41a6-93e8-5142dae652b8",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear solicitudes",
+      "url": "http://localhost:3000/api/solicitudes",
+      "method": "POST",
+      "sortNum": 120000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"materia_id\": \"M-LAB\",\n  \"solicitud_id\": \"S-LAB\",\n  \"motivo\": \"Consultas en MongoDB\",\n  \"prioridad\": \"Media\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "9c8d909c-b284-4618-909b-48145ec3b4f3",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar S-LAB",
+      "url": "http://localhost:3000/api/solicitudes/S-LAB",
+      "method": "GET",
+      "sortNum": 130000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "9d274426-d816-4a51-beda-f685a13f0a0a",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar S-LAB",
+      "url": "http://localhost:3000/api/solicitudes/S-LAB",
+      "method": "PUT",
+      "sortNum": 140000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"estado\": \"Aprobada\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "40ac58c8-40e6-47ef-9306-92d7a876a1ec",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear disponibilidad",
+      "url": "http://localhost:3000/api/disponibilidad",
+      "method": "POST",
+      "sortNum": 150000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"disponibilidad_id\": \"D-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"dia\": \"Lunes\",\n  \"hora_inicio\": \"08:00\",\n  \"hora_fin\": \"12:00\",\n  \"modalidad\": [\n    \"Virtual\"\n  ]\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "4579f088-7103-4f42-ab79-4fb97a21b0c5",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar D-LAB",
+      "url": "http://localhost:3000/api/disponibilidad/D-LAB",
+      "method": "GET",
+      "sortNum": 160000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "b7459de5-7863-4faf-9f08-a0cd16efbcb3",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar D-LAB",
+      "url": "http://localhost:3000/api/disponibilidad/D-LAB",
+      "method": "PUT",
+      "sortNum": 170000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"hora_fin\": \"13:00\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "220928a8-f279-4929-923d-352a35498c46",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear tutorias",
+      "url": "http://localhost:3000/api/tutorias",
+      "method": "POST",
+      "sortNum": 180000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"materia_id\": \"M-LAB\",\n  \"tutoria_id\": \"TU-LAB\",\n  \"solicitud_id\": \"S-LAB\",\n  \"fecha\": \"2030-05-06\",\n  \"hora_inicio\": \"09:00\",\n  \"hora_fin\": \"10:00\",\n  \"modalidad\": \"Virtual\",\n  \"tema_solicitado\": \"Agregaciones\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "08067ea4-63c3-4826-8b39-da42c5a94609",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar TU-LAB",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "GET",
+      "sortNum": 190000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "01760162-a297-4122-bf25-5373add8059e",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar TU-LAB",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "PUT",
+      "sortNum": 200000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"hora_inicio\": \"09:15\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "7c911847-98e6-42e3-a9e6-0b0f40ceb6f6",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Detectar cruce de horario",
+      "url": "http://localhost:3000/api/tutorias",
+      "method": "POST",
+      "sortNum": 210000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"materia_id\": \"M-LAB\",\n  \"tutoria_id\": \"TU-CRUCE\",\n  \"solicitud_id\": \"S-LAB\",\n  \"fecha\": \"2030-05-06\",\n  \"hora_inicio\": \"09:00\",\n  \"hora_fin\": \"10:00\",\n  \"modalidad\": \"Virtual\",\n  \"tema_solicitado\": \"Agregaciones\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "64363783-6f36-4880-9404-acb702414b4f",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Historial por estudiante",
+      "url": "http://localhost:3000/api/tutorias/estudiante/E-LAB",
+      "method": "GET",
+      "sortNum": 220000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "b0046cbc-234a-47f5-bc50-a282242240ea",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Rechazar valoración anticipada",
+      "url": "http://localhost:3000/api/valoraciones",
+      "method": "POST",
+      "sortNum": 230000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "400"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"valoracion_id\": \"V-LAB\",\n  \"tutoria_id\": \"TU-LAB\",\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"puntuacion\": 5,\n  \"comentario\": \"Aprendí a agrupar datos\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "ea2fd3d7-4275-4925-aed8-f9e0447d88d7",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Registrar tema tratado",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "PUT",
+      "sortNum": 240000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"tema_tratado\": \"Agrupar valoraciones con $group\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "472d2ef8-a5f2-4887-a034-69b791fd3e04",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Registrar resultado y finalizar",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "PUT",
+      "sortNum": 250000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"resultado\": \"Calculó el promedio por tutor\",\n  \"estado\": \"Finalizada\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "5c444a5a-5376-4ec5-86ee-5cde3dd7c296",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear asistencias",
+      "url": "http://localhost:3000/api/asistencias",
+      "method": "POST",
+      "sortNum": 260000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"asistencia_id\": \"A-LAB\",\n  \"tutoria_id\": \"TU-LAB\",\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"estado_estudiante\": \"Asistio\",\n  \"estado_tutor\": \"Asistio\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "d7f99086-ee4a-4f00-b1ee-1d466161fec3",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar A-LAB",
+      "url": "http://localhost:3000/api/asistencias/A-LAB",
+      "method": "GET",
+      "sortNum": 270000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "49a56744-c774-4882-83d2-31c77006b100",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar A-LAB",
+      "url": "http://localhost:3000/api/asistencias/A-LAB",
+      "method": "PUT",
+      "sortNum": 280000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"minutos_asistencia\": 45\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "88b56f2f-edfa-4ab9-bf27-64ab8da286ac",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear seguimientos",
+      "url": "http://localhost:3000/api/seguimientos",
+      "method": "POST",
+      "sortNum": 290000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"seguimiento_id\": \"SE-LAB\",\n  \"tutoria_id\": \"TU-LAB\",\n  \"estudiante_id\": \"E-LAB\",\n  \"materia_id\": \"M-LAB\",\n  \"tema\": \"MongoDB\",\n  \"nivel_inicial\": 2,\n  \"nivel_final\": 4\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "0e03b33c-b2f7-426d-99ae-319d2bc96e9a",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar SE-LAB",
+      "url": "http://localhost:3000/api/seguimientos/SE-LAB",
+      "method": "GET",
+      "sortNum": 300000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "131327fc-0bfc-4e96-9dcd-0d9169d67e2b",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar SE-LAB",
+      "url": "http://localhost:3000/api/seguimientos/SE-LAB",
+      "method": "PUT",
+      "sortNum": 310000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nivel_final\": 5\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "af23a934-d34d-4db3-9950-5cd3c82195e1",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Crear valoraciones",
+      "url": "http://localhost:3000/api/valoraciones",
+      "method": "POST",
+      "sortNum": 320000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "201"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"valoracion_id\": \"V-LAB\",\n  \"tutoria_id\": \"TU-LAB\",\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"puntuacion\": 5,\n  \"comentario\": \"Aprendí a agrupar datos\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "766e286c-fd75-4f9b-800e-7afcc8ffdfcb",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Consultar V-LAB",
+      "url": "http://localhost:3000/api/valoraciones/V-LAB",
+      "method": "GET",
+      "sortNum": 330000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "752e1b18-7c93-476a-81fb-3d1bbe5961e2",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Editar V-LAB",
+      "url": "http://localhost:3000/api/valoraciones/V-LAB",
+      "method": "PUT",
+      "sortNum": 340000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"puntuacion\": 4\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "bc9f47d6-6b50-43b5-8299-62ddf1245759",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Rechazar calificación duplicada",
+      "url": "http://localhost:3000/api/valoraciones",
+      "method": "POST",
+      "sortNum": 350000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"valoracion_id\": \"V-DUP\",\n  \"tutoria_id\": \"TU-LAB\",\n  \"estudiante_id\": \"E-LAB\",\n  \"tutor_id\": \"T-LAB\",\n  \"puntuacion\": 5,\n  \"comentario\": \"Aprendí a agrupar datos\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "4e519449-bbfc-4357-b4e9-ace5e0db39ec",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Proteger historial",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "DELETE",
+      "sortNum": 360000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "409"
+        }
+      ]
+    },
+    {
+      "_id": "a773cb40-ec0a-43cc-8b3d-1b7ead01ed50",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Reporte de materias",
+      "url": "http://localhost:3000/api/reportes/materias",
+      "method": "GET",
+      "sortNum": 370000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "b817e381-dcc0-4183-ba74-307c45a437d5",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Reporte de tutores",
+      "url": "http://localhost:3000/api/reportes/tutores",
+      "method": "GET",
+      "sortNum": 380000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "466515f3-8ecb-48bf-b940-acf8a667db5d",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Reporte de estudiantes",
+      "url": "http://localhost:3000/api/reportes/estudiantes",
+      "method": "GET",
+      "sortNum": 390000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "8d4f779e-28e5-486f-b944-c57f4222dd4e",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Reporte de asistencia",
+      "url": "http://localhost:3000/api/reportes/asistencia",
+      "method": "GET",
+      "sortNum": 400000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "47649799-e351-4678-999b-ca9ec54cf1ae",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Reporte de resumen",
+      "url": "http://localhost:3000/api/reportes/resumen",
+      "method": "GET",
+      "sortNum": 410000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "454cba3f-c956-462d-a402-0fae2b2b9a3c",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Reporte de valoraciones",
+      "url": "http://localhost:3000/api/reportes/valoraciones",
+      "method": "GET",
+      "sortNum": 420000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "517264d8-6434-413e-b24c-e10bffb87c25",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar V-LAB",
+      "url": "http://localhost:3000/api/valoraciones/V-LAB",
+      "method": "DELETE",
+      "sortNum": 430000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "b2941630-ee0b-4e3e-8b6c-ccdfd300e2d9",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar SE-LAB",
+      "url": "http://localhost:3000/api/seguimientos/SE-LAB",
+      "method": "DELETE",
+      "sortNum": 440000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "2ca68ab8-9590-40cb-a410-88e4c9ed709e",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar A-LAB",
+      "url": "http://localhost:3000/api/asistencias/A-LAB",
+      "method": "DELETE",
+      "sortNum": 450000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "67b1fe61-0d88-47fa-861a-f5f674d8534d",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar TU-LAB",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "DELETE",
+      "sortNum": 460000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "9a56b777-c371-46d1-91af-60ff1f73c67a",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar D-LAB",
+      "url": "http://localhost:3000/api/disponibilidad/D-LAB",
+      "method": "DELETE",
+      "sortNum": 470000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "9fef32fa-f662-435a-9f7d-f18094264748",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar S-LAB",
+      "url": "http://localhost:3000/api/solicitudes/S-LAB",
+      "method": "DELETE",
+      "sortNum": 480000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "439ff9f1-e480-46db-a9e6-1dac6d7852d0",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar T-LAB",
+      "url": "http://localhost:3000/api/tutores/T-LAB",
+      "method": "DELETE",
+      "sortNum": 490000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "992850c0-016c-4051-85cd-47c46c622048",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar E-LAB",
+      "url": "http://localhost:3000/api/estudiantes/E-LAB",
+      "method": "DELETE",
+      "sortNum": 500000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "f2632f7a-7999-4fea-8d49-89ec2127c511",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Eliminar M-LAB",
+      "url": "http://localhost:3000/api/materias/M-LAB",
+      "method": "DELETE",
+      "sortNum": 510000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "_id": "ca3703dd-7182-4c0a-bfdf-c91700c27fa0",
+      "colId": "5e868144-df22-45cf-af46-163724726b7a",
+      "containerId": "",
+      "name": "Confirmar eliminación",
+      "url": "http://localhost:3000/api/tutorias/TU-LAB",
+      "method": "GET",
+      "sortNum": 520000,
+      "headers": [],
+      "params": [],
+      "tests": [
+        {
+          "type": "res-code",
+          "custom": "",
+          "action": "equal",
+          "value": "404"
+        }
+      ]
+    }
+  ]
+}
